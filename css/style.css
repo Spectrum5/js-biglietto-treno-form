@@ -1,0 +1,126 @@
+/* REGOLE GENERALI */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    background-image: url(../img/bg-train.jpg);
+}
+
+.container {
+    max-width: 40rem;
+    margin: auto;
+    text-align: center;
+ }
+
+.row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+h2 {
+    margin: 10px 0px;
+}
+
+.col-30{
+    width: 30%;
+}
+
+.col-33 {
+    width: 33%;  
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.col-67 {
+    width: 67%;
+    border: 1px solid white;
+}
+
+.ticket-generator, .back-ticket{
+    background-color: rgba(173, 92, 15, 0.301);
+    border-radius: 10px;
+}
+
+.ticket-generator, .ticket {
+    padding: 20px;
+}
+
+input {
+    text-align: center;
+}
+
+.bg-ticket {
+    background-color: rgba(224, 118, 18, 0.452);
+}
+
+/* button */
+button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(237, 159, 57);
+    color: white;
+    border: 1px solid white;
+}
+
+.button-ticket {
+    position: absolute;
+    margin-top: 50px;
+    transform: translate(-50%, -50%);
+}
+
+/* ticket */
+.back-ticket {
+    display: none;
+    position: relative;
+}
+
+.ticket {
+    background-color: rgba(220, 160, 69, 0.3);
+    border-radius: 10px;
+}
+
+.ticket-on {
+    display: flex;
+}
+
+#show-name {
+    margin: 10px 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+ 
+#ticket-info {
+    width: 100%;
+}
+ 
+ /* table */
+#ticket-info td, #ticket-info th {
+   border: 1px solid rgb(255, 255, 255);
+   padding: 10px;
+}
+ 
+#ticket-info th {
+   background-color: rgba(49, 28, 3, 0.705);
+}
